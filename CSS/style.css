@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 65%;
+    overflow-x: hidden;
+}
+section{
+    padding: 5rem 10%;
+}
+.header{
+    width: 100%;
+    padding: 2rem 10%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo a{
+    font-size: 2.3rem;
+    color: #454545;
+}
+.header .navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .navbar ul li a{
+padding: 10px;
+font-size: 1.5rem;
+color: #454545;
+transition: 0.4 ease;
+}
+.header .navbar ul li a:hover{
+    color: #000;
+}
+.header .fa-solid {
+    display: none;
+}
+/*==Header ends==*/
+/*==Home section starts==*/
+.home-container .inside-home{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-container .inside-home .social-icons{
+    display: grid;
+    line-height: 2;
+}
+.home-container .inside-home .social-icons a{
+    font-size: 1.6rem;
+    color: #454545;
+}
+.home-container .inside-home .social-icons a:hover{
+    color: #000;
+}
+.home-container .inside-home .home-content{
+    line-height: 1.3;
+}
+.home-container .inside-home .home-content h1{
+    font-size:7rem;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+.home-container .inside-home .home-content h5{
+    font-size: 2rem;
+    font-weight: normal;
+    color: #282828;
+}
+.home-container .inside-home .home-content .about-home p{
+    color: #505050;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+.home-container .inside-home .home-content .about-home .say-hello {
+    margin-top: 40px;
+}
+.home-container .inside-home .home-content .about-home .say-hello a{
+    background-color: #1E1E1E;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+.home-container .inside-home .home-content .about-home .say-hello  i{
+    font-size: 2rem;
+    margin: 10px;
+}
+.home-container .inside-home .hero-image img{
+    height:320px;
+    margin-top: 80px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sroll-down{
+    position: absolute;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+}
+.sroll-down img{
+    height: 40px;
+}
+.sroll-down a{
+    font-size: 1.5rem;
+    color: #505050;
+}
+.sroll-down a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.sroll-down i{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #505050;
+}
+/*==Home section ends==*/
+/*=====Responsive typography==*/
+/*For large divces*/
+@media screen and (max-width:992px){
+    html{
+        font-size: 55%;
+    }
+}
+/*For medium divces*/
+@media screen and (max-width:768px){
+    .header .fa-solid {
+        display: flex;
+        margin-right: 40px;
+        align-items: center;
+        justify-content: center;
+        font-size:2rem;
+
+    }
+    .home-container .inside-home{
+        display:grid;
+        align-items: center;
+    }
+    .header{
+        bottom: 0;
+        top: initial;
+        height: 7vh;
+        background-color: #ffffff;
+        position: fixed;
+        border-top: 1px solid black;
+    }
+    .header .navbar{
+        position: fixed;
+    }
+    .header .navbar ul{
+       /* padding: 150px; */
+       display: flex;
+       flex-direction: row;
+    }
+    .header .navbar ul li a{
+        margin-right: 40px;
+        font-size: 1.5rem;
+        color: #454545;
+        transition: 0.4 ease;
+        }
+}
+@media screen and (max-width:576px){
+    .home-container .inside-home{
+        display:grid;
+        align-items: center;
+    }
+    .header{
+        bottom: 0;
+        top: initial;
+        height: 7vh;
+        background-color: #ffffff;
+        position: fixed;
+        border-top: 1px solid black;
+        /* padding: 0rem 5%; */
+    }
+    .header .navbar{
+        position: fixed;
+      
+    }
+    .header .navbar ul{
+       padding: 260px;
+       display: flex;
+       flex-direction: row;
+    }
+}
