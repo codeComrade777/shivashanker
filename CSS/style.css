@@ -76,6 +76,7 @@ section {
 
 .home-container .inside-home .social-icons a:hover {
     color: #000;
+    opacity: 1;
 }
 
 .home-container .inside-home .home-content {
@@ -126,7 +127,7 @@ section {
 
 .sroll-down {
     position: absolute;
-    margin-top: 150px;
+    margin-top: 200px;
     display: flex;
     align-items: center;
 }
@@ -150,6 +151,8 @@ section {
     margin-left: 10px;
     color: #505050;
 }
+
+
 
 /*==Home section ends==*/
 /*=====Responsive typography==*/
@@ -222,11 +225,63 @@ section {
         font-size: 1.3rem;
     }
 }
+@media screen and (max-width:480px) {
+    .header .navbar {
+        margin-left: 0px;
+    }
+
+    .header .navbar ul li {
+        margin-right: 20px;
+        /* justify-content: center; */
+    }
+
+    .header .navbar ul li a {
+        font-size: 1.7rem;
+    }
+
+    .header .fa-solid {
+        font-size: 2rem;
+    }
+    .header  .logo a{
+        font-size: 1.5rem;
+        display: none;
+    }
+}
+@media screen and (max-width:399px) {
+    .header .navbar {
+        margin-left:0px;
+    }
+
+    .header .navbar ul li {
+        margin-right: 7px;
+        /* justify-content: center; */
+    }
+
+    .header .navbar ul li a {
+        font-size: 1.4rem;
+    }
+
+    .header .fa-solid {
+        font-size: 1.8rem;
+    }
+    .header  .logo a{
+        font-size: 1.5rem;
+        display: none;
+    }
+    .home-container .inside-home .hero-image img {
+        height: 320px;
+    }
+    .sroll-down {
+    
+        margin-top: 420px;
+        
+    }
+}
 
 /*==For small devices==*/
 @media screen and (max-width:350px) {
     .header .navbar {
-        margin-left: 0px;
+        margin-left:-10px;
     }
 
     .header .navbar ul li {
@@ -244,5 +299,13 @@ section {
     .header  .logo a{
         font-size: 1.5rem;
         display: none;
+    }
+    .home-container .inside-home .hero-image img {
+        height: 280px;
+    }
+    .sroll-down {
+    
+        margin-top: 400px;
+        
     }
 }
