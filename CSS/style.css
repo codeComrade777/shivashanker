@@ -369,6 +369,7 @@ section {
     border-radius: 2.4rem;
 }
 .model-container h1{
+    
     text-align: center;
     margin-bottom: 0px;
     margin-top: 30px;
@@ -380,7 +381,6 @@ section {
     margin: 20px;
     font-size: 1.5rem;
     text-align: center;
-    color: #8e8e8e;
 }
 .heading1{
     padding: 20px;
@@ -406,6 +406,11 @@ section {
 .services-modelpopup.active{
     opacity: 1;
     pointer-events: all;
+}
+.classn{
+    color: red;
+    font-size: 3rem;
+    opacity: 0;
 }
 
 /*==Skills section ends==*/
@@ -554,7 +559,12 @@ section {
     }
     
 }
-@media screen and (max-width:480px) {
+@media screen and (max-width:420px) {
+    .classn{
+        color: red;
+        font-size: 3rem;
+        opacity: 1;
+    }
     .skills-box{
         column-gap: 1.25rem;
     }
@@ -562,11 +572,11 @@ section {
         margin-left: 0px;
     }
     .about-container .inside-about img{
-        height: 430px;
+        height: 380px;
         margin-left: 0px;
     }
     .home-container .inside-home .hero-image img {
-        height:430px;
+        height:380px;
     }
     .header .navbar ul li {
         margin-right: 10px;
@@ -589,6 +599,21 @@ section {
         text-align: center;
         font-size: 1.7rem;
         margin-top: 10px
+    }
+    .sroll-down {
+        margin-top: 490px;
+    }
+    .download-cv{
+        text-align: center;
+    }
+    .about-details{
+        width: 120%;
+        margin-left: -30px;
+    }
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(1,390px);
+        column-gap: 1.5rem;
     }
 }
 @media screen and (max-width:399px) {
