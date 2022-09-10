@@ -569,7 +569,7 @@ section {
         column-gap: 1.25rem;
     }
     .header .navbar {
-        margin-left: 0px;
+        margin-left: -25px;
     }
     .about-container .inside-about img{
         height: 380px;
@@ -579,7 +579,7 @@ section {
         height:380px;
     }
     .header .navbar ul li {
-        margin-right: 10px;
+        margin-right: 5px;
         margin-bottom: 10px;
         /* justify-content: center; */
     }
