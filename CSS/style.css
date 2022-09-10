@@ -337,15 +337,77 @@ section {
     font-weight: normal;
     margin-bottom: 2rem;
 }
-.view-more a{
+.view-more button{
+ background: none;
+ outline: none;
+ border: none;
+ cursor: pointer;
+ text-decoration: underline;
+}
+.services-modelpopup{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color:rgba(0,0,0, 0.5);
+    transition: all .3s ease-in-out;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+
+}
+.model-container{
+    background-color: #fff;
+    width: 560px;
+    max-width: 90%;
+    padding: 20px;
+    position: relative;
+    height: 380px;
+    border-radius: 2.4rem;
+}
+.model-container h1{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+.model-container p{
+    padding: 10px;
+    margin: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #8e8e8e;
+}
+.heading1{
+    padding: 20px;
+    line-height: 2;
+    font-size: 1.4rem;
+}
+.heading1 i{
+    margin-right: 10px;
+}
+.close{
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    top: 10px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    outline: none;
+}
+.close:hover{
     color: #282828;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-    text-decoration: underline;
 }
-.view-more i{
-    margin-left:5px;
+.services-modelpopup.active{
+    opacity: 1;
+    pointer-events: all;
 }
+
 /*==Skills section ends==*/
 /*=====Responsive typography==*/
 /*For large divces*/
@@ -603,21 +665,10 @@ section {
     position: relative;
     }
     .about-container .inside-about img{
-        height: 310px;   
+        height: 310px;
+        
     }
     .download-cv{
         text-align: center;
     }
-    .details-card{
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-    margin: 10px;
-    border-radius: 30px;
-    background-color: #fff;
-    flex: 1;
-    max-width: 400px;
-    height:100px;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-}
 }
